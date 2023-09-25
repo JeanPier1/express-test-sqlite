@@ -47,7 +47,7 @@ describe("Test Book routes", () => {
   });
   test("It getbook by Id", async () => {
     await request(app)
-      .get("/api/book/4")
+      .get("/api/book/1")
       .set({ Authorization: accessToken, Accept: "application/json" })
       .then((response) => {
         expect(response.statusCode).toBe(200);
